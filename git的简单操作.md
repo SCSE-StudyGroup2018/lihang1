@@ -22,7 +22,7 @@ sudo apt-get install git
 $ git config --global user.name "Your Name"
 $ git config --global user.email "email@example.com"
 ```
-# 二、创建版本库
+# 三、创建版本库
 **首先**，选择一个合适的地方，创建一个空目录：
 ```
 $ mkdir learngit
