@@ -17,4 +17,45 @@ sudo apt-get install git
 **在Windows上安装Git**
 在Windows上使用Git，可以从Git官网直接下载安装程序，（网速慢的同学请移步国内镜像），然后按默认选项安装即可。
 安装完成后，在开始菜单里找到“Git”->“Git Bash”，蹦出一个类似命令行窗口的东西，就说明Git安装成功！
-![](https://cdn.liaoxuefeng.com/cdn/files/attachments/001384907073134ef6feff559cf4ce3a2c5c588d2831c0a000/0" data-)
+安装完成后，还需要最后一步设置，在命令行输入：
+```
+$ git config --global user.name "Your Name"
+$ git config --global user.email "email@example.com"
+```
+# 二、创建版本库
+**首先**，选择一个合适的地方，创建一个空目录：
+```
+$ mkdir learngit
+$ cd learngit
+$ pwd
+/Users/michael/learngit
+```
+pwd命令用于显示当前目录。在我的Mac上，这个仓库位于/Users/michael/learngit。
+**第二步**，通过git init命令把这个目录变成Git可以管理的仓库：
+```
+$ git init
+Initialized empty Git repository in /Users/michael/learngit/.git/
+```
+瞬间Git就把仓库建好了，而且告诉你是一个空的仓库（empty Git repository），此时当前目录下多了一个.git的目录，这个目录是Git来跟踪管理版本库的，不要手动修改这个目录里面的文件，不然改乱了，就把Git仓库给破坏了。
+如果没有出现.git目录，那是因为这个目录默认是隐藏的，用ls -ah命令就可以看见
+**把文件添加到版本库**
+编写一个readme.txt文件，内容如下：
+```
+Git is a version control system.
+Git is free software.
+```
+将之放到learngit目录下（子目录也行）
+*第一步*，用命令git add告诉Git，把文件添加到仓库：
+·$ git add readme.txt·
+执行上面的命令，没有任何显示，就说明添加成功。
+*第二步*，用命令git commit告诉Git，把文件提交到仓库：
+```
+$ git commit -m "wrote a readme file"
+[master (root-commit) eaadf4e] wrote a readme file
+ 1 file changed, 2 insertions(+)
+ create mode 100644 readme.txt
+ ```
+简单解释一下git commit命令，-m后面输入的是本次提交的说明，可以输入任意内容，当然最好是有意义的，这样你就能从历史记录里方便地找到改动记录。
+git commit命令执行成功后会告诉你，1 file changed：1个文件被改动（我们新添加的readme.txt文件）；2 insertions：插入了两行内容（readme.txt有两行内容）。
+***要随时掌握工作区的状态，使用git status命令。
+如果git status告诉你有文件被修改过，用git diff可以查看修改内容***
