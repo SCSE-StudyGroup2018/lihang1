@@ -13,4 +13,8 @@ sudo apt-get install git
 ```
 像上面的命令，有很多Linux会友好地告诉你Git没有安装，还会告诉你如何安装Git。
 如果你碰巧用Debian或Ubuntu Linux，通过一条`sudo apt-get install git`就可以直接完成Git的安装，非常简单
-
+老一点的Debian或Ubuntu Linux，要把命令改为`sudo apt-get install git-core`
+**在Windows上安装Git**
+在Windows上使用Git，可以从Git官网直接下载安装程序，（网速慢的同学请移步国内镜像），然后按默认选项安装即可。
+安装完成后，在开始菜单里找到“Git”->“Git Bash”，蹦出一个类似命令行窗口的东西，就说明Git安装成功！
+![](https://cdn.liaoxuefeng.com/cdn/files/attachments/001384907073134ef6feff559cf4ce3a2c5c588d2831c0a000/0" data-)
