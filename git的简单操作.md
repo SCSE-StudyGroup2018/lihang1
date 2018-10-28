@@ -13,4 +13,4 @@ sudo apt-get install git
 ```
 像上面的命令，有很多Linux会友好地告诉你Git没有安装，还会告诉你如何安装Git。
 如果你碰巧用Debian或Ubuntu Linux，通过一条`sudo apt-get install git`就可以直接完成Git的安装，非常简单
-[bg](http://github.liaoxuefeng.com/sinaweibopy/video/git-apt-install.mp4">)
+
