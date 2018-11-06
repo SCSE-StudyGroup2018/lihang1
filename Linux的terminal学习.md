@@ -11,7 +11,7 @@
 + *注意：不管是重启系统还是关闭系统，首先要运行 sync 命令，把内存中的数据写到磁盘中。*
 #  Linux系统的目录结构
 在终端输入`1s/`之后就会出现
-![](//www.runoob.com/wp-content/uploads/2014/06/4_20.png)
+![](http://www.runoob.com/wp-content/uploads/2014/06/4_20.png)
 树状目录结构：
 ![](http://www.runoob.com/wp-content/uploads/2014/06/003vPl7Rty6E8kZRlAEdc690.jpg)
 +  /bin：
