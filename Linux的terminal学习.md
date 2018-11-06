@@ -11,10 +11,9 @@
 + *注意：不管是重启系统还是关闭系统，首先要运行 sync 命令，把内存中的数据写到磁盘中。*
 #  Linux系统的目录结构
 在终端输入`1s/`之后就会出现
-
+![](//www.runoob.com/wp-content/uploads/2014/06/4_20.png)
 树状目录结构：
-![](http://www.runoob.com/wp-content/uploads/2014/06/363003_1227493859FdXT.png)
-
+![](http://www.runoob.com/wp-content/uploads/2014/06/003vPl7Rty6E8kZRlAEdc690.jpg)
 +  /bin：
 bin是Binary的缩写, 这个目录存放着最经常使用的命令。
 + /boot：
@@ -110,7 +109,7 @@ s就是Super User的意思，这里存放的是系统管理员使用的系统管
 + 若是`c`则表示为装置文件里面的串行端口设备，例如键盘、鼠标(一次性读取装置)。
 ## 文件的权限
 以`rwx` 三个参数的组合。其中，`r`代表可读(read)、`w`代表可写(write)、`x`代表可执行(execute)。`-`表示没有权限。
-
+![](http://www.runoob.com/wp-content/uploads/2014/06/363003_1227493859FdXT.png)
 属主：owner 属组：group 其他成员：others
 第0位确定文件类型，第1-3位确定属主（该文件的所有者）拥有该文件的权限。
 
