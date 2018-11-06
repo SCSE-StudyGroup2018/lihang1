@@ -1,7 +1,7 @@
 # Linux的关机操作
-正确的关机流程为：sync > shutdown > reboot > halt
-关机指令为：shutdown ，你可以man shutdown 来看一下帮助文档。
-运行如下命令关机： 
+正确的关机流程为：sync > shutdown > reboot > halt     
+关机指令为：shutdown ，你可以man shutdown 来看一下帮助文档。    
+运行如下命令关机：   
 + `sync` 将数据由内存同步到硬盘中。
 + ` shutdown –h 10 ‘This server will shutdown after 10 mins’`计算机将在10分钟后关机，并且会显示在登陆用户的当前屏幕中。
 + `shutdown –h now `立马关机 `shutdown –r now` 系统立马重启 
@@ -10,9 +10,9 @@
 *  `reboot` 就是重启，等同于 `shutdown –r now halt `关闭系统，等同于`shutdown –h now` 和 `poweroff`
 + *注意：不管是重启系统还是关闭系统，首先要运行 sync 命令，把内存中的数据写到磁盘中。*
 #  Linux系统的目录结构
-在终端输入`1s/`之后就会出现
-![](http://www.runoob.com/wp-content/uploads/2014/06/4_20.png)
-树状目录结构：
+在终端输入`1s/`之后就会出现    
+![](http://www.runoob.com/wp-content/uploads/2014/06/4_20.png)    
+树状目录结构：   
 ![](http://www.runoob.com/wp-content/uploads/2014/06/003vPl7Rty6E8kZRlAEdc690.jpg)
 +  /bin：
 bin是Binary的缩写, 这个目录存放着最经常使用的命令。
@@ -72,49 +72,48 @@ s就是Super User的意思，这里存放的是系统管理员使用的系统管
 
 # linux的远程登陆
 
-终端利用ssh登录远程服务器
+终端利用ssh登录远程服务器    
 
-安装ssh：
+安装ssh：    
 
 `yum install ss`
-启动ssh：
+启动ssh：    
 
-`service sshd start`
-登录远程服务器：
+`service sshd start`    
+登录远程服务器：    
 
-`ssh -p 50022 my@127.0.0.1`
-输入密码：
+`ssh -p 50022 my@127.0.0.1`           
+输入密码：   
 `my@127.0.0.1:`
-`-p` 后面是端口
+`-p` 后面是端口            
 
-`my `是服务器用户名
+`my `是服务器用户名           
 
-`127.0.0.1 `是服务器 ip
+`127.0.0.1 `是服务器 ip             
 
-回车输入密码即可登录
+回车输入密码即可登录           
 
 # linux的文件属性
 
-在Linux中我们可以使用`ll`或者`ls –l`命令来显示一个文件的属性以及文件所属的用户和组
+在Linux中我们可以使用`ll`或者`ls –l`命令来显示一个文件的属性以及文件所属的用户和组          
 
 例如：
 ```
 [root@www /]# ls -l total 64 dr-xr-xr-x 2 root root 4096 Dec 14 2012 bin dr-xr-xr-x 4 root root 4096 Apr 19 2012 boot ……
 ```
-在Linux中第一个字符代表这个文件是目录、文件或链接文件等等。
+在Linux中第一个字符代表这个文件是目录、文件或链接文件等等。 
 + 当为`d`则是目录
 + 当为`-`则是文件；
 + 若是`l`则表示为链接文档(link file)；
 + 若是`b`则表示为装置文件里面的可供储存的接口设备(可随机存取装置)；
 + 若是`c`则表示为装置文件里面的串行端口设备，例如键盘、鼠标(一次性读取装置)。
 ## 文件的权限
-以`rwx` 三个参数的组合。其中，`r`代表可读(read)、`w`代表可写(write)、`x`代表可执行(execute)。`-`表示没有权限。
-![](http://www.runoob.com/wp-content/uploads/2014/06/363003_1227493859FdXT.png)
-属主：owner 属组：group 其他成员：others
-第0位确定文件类型，第1-3位确定属主（该文件的所有者）拥有该文件的权限。
-
-第4-6位确定属组（所有者的同组用户）拥有该文件的权限，第7-9位确定其他用户拥有该文件的权限。
-对于 root 用户来说，一般情况下，文件的权限对其不起作用。
+以`rwx` 三个参数的组合。其中，`r`代表可读(read)、`w`代表可写(write)、`x`代表可执行(execute)。`-`表示没有权限。               
+![](http://www.runoob.com/wp-content/uploads/2014/06/363003_1227493859FdXT.png)             
+属主：owner 属组：group 其他成员：others        
+第0位确定文件类型，第1-3位确定属主（该文件的所有者）拥有该文件的权限。           
+第4-6位确定属组（所有者的同组用户）拥有该文件的权限，第7-9位确定其他用户拥有该文件的权限。         
+对于 root 用户来说，一般情况下，文件的权限对其不起作用。           
 ## 更改文件属性
 + chgrp：更改文件属组：`chgrp [-R] 属组名 文件名`
 -R：递归更改文件属组，就是在更改某个目录文件的属组时，如果*加上-R*的参数，那么*该目录下的所有文件的属组*都会更改。 
