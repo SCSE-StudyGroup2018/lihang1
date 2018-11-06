@@ -31,15 +31,14 @@
     4.建立文本 
     gedit hello world.c //然后按下回车，会跳出一个类似于windows的记事本 
     5.往里面敲代码 
-   C 
+    C 
     # include <stdio.h> 
     int main(void) { 
     printf("hello world!"); 
     return 0; 
     } 
-   
     6.保存代码，关闭文本框。
-   *** 按esc，再输入：wq***（一开始看不到尽管输进去，*wq为保存并关闭*，也可为*w则为保存不关闭*） 
+    *** 按esc，再输入：wq***（一开始看不到尽管输进去，*wq为保存并关闭*，也可为*w则为保存不关闭*） 
     7.启动gcc对代码进行编译。 
     gcc helloworld.c -o execFile（此步骤会生成一个execFlie的文件，可用ls查看）
     8.如果有错误，系统会提示，按方向键找回gedit helloworld.c 的指令，按下回车，弹出文本框后根据系统提示对代码进行修改，完成后记得保存，
