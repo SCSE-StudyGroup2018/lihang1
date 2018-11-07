@@ -146,7 +146,22 @@ xyz : 就是刚刚提到的数字类型的权限属性，为 rwx 属性数值的
 [root@www ~]# ls [--color={never,auto,always}]
 目录名称[root@www ~]# ls [--full-time] 目录名称
 ```
+选项与参数
+-a ：全部的文件，连同隐藏档( 开头为 . 的文件) 一起列出来(常用)
+-d ：仅列出目录本身，而不是列出目录内的文件数据(常用)
+-l ：长数据串列出，包含文件的属性与权限等等数据；(常用)
 + cd：切换目录
+语法：`cd [相对路径或绝对路径]`    
+使用 mkdir 命令创建 runoob 目录 :`[root@www ~]# mkdir runoob `
+使用绝对路径切换到 runoob 目录: `[root@www ~]# cd /root/runoob/`
+使用相对路径切换到 runoob 目录:`[root@www ~]# cd ./runoob/`
+表示回到自己的家目录:`[root@www runoob]# cd ~ `
+表示去到目前的上一级目录:`[root@www ~]# cd ..`
++ pwd：显示目前的目录
++ mkdir：创建一个新的目录
++ rmdir：删除一个空的目录
++ cp: 复制文件或目录
++ rm: 移除文件或目录
 
 
 
