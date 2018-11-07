@@ -139,7 +139,14 @@ xyz : 就是刚刚提到的数字类型的权限属性，为 rwx 属性数值的
 `+`：加入`-`：除去`=`：设定    
 例如：`chmod a+r 文件名`j将所有人都加入阅读的权限。
 
-
+## 处理目录的常用命令
++ ls: 列出目录
+```
+[root@www ~]# ls [-aAdfFhilnrRSt] 目录名称
+[root@www ~]# ls [--color={never,auto,always}]
+目录名称[root@www ~]# ls [--full-time] 目录名称
+```
++ cd：切换目录
 
 
 
