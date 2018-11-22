@@ -295,3 +295,12 @@ else return(n*jc(n-1));
 ```
 此函数即可以求出n的阶乘。   
 *注意*：递归时一定要设置结束条件，否则就会进入死循环。
+# 四、一般C语言的算法
+## 随机数的生成
+```
+#include<time.h>
+int a,x,y;
+srand((unsiged int)time(NULL));
+rand()%(y-x+1)+x
+```
+此代码即生成一个x到的一个随机数赋值给a
