@@ -301,6 +301,6 @@ else return(n*jc(n-1));
 #include<time.h>
 int a,x,y;
 srand((unsiged int)time(NULL));
-rand()%(y-x+1)+x
+a=rand()%(y-x+1)+x;
 ```
-此代码即生成一个x到的一个随机数赋值给a
+此代码即生成一个x到y的一个随机数赋值给a
